@@ -155,13 +155,7 @@ int main(int argc, char *argv[]) {
                         std::this_thread::sleep_for(std::chrono::milliseconds(int(refreshTime - elapsedMS)));
                 }
             }
-        
-            FILE *f = fopen("test.bin", "wb");
-
-            fwrite(Core::Memory::getPointer(0x08800000), 0x3800000, 1, f);
-            fclose(f);
         }
-
         Core::GPU::destroyRenderDevice(Core::GPU::getRenderDevice());
         Core::GPU::setRenderDevice(nullptr);
 #endif
