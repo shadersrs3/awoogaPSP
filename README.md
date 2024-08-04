@@ -1,4 +1,4 @@
 # awoogaPSP
 an HLE PSP emulator in C++
 
-![crash][img/crash.png]
+![cave story][https://github.com/x1337beef/awoogaPSP/blob/main/img/cavestory.png]
