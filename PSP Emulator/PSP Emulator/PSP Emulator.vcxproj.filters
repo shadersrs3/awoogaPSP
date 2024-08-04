@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{0cacb2a3-45cc-4712-a509-ca79b31ee8ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Memory">
+      <UniqueIdentifier>{ed60ccd3-6685-4870-ab10-b5b8b9b33eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Utilities">
+      <UniqueIdentifier>{cc629846-dcc4-4b96-b8c9-ac1fe9a404a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\System">
+      <UniqueIdentifier>{fae203da-6be6-4137-8fa8-a85fb930ec79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Crypto">
+      <UniqueIdentifier>{94deb013-54dd-4ede-a8f0-20b8aa09834a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Allegrex">
+      <UniqueIdentifier>{e3a911a1-57a2-42a8-b4da-c8baaf0903e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Allegrex\JIT">
+      <UniqueIdentifier>{edda8991-e1d9-4c00-bae4-b23c2f1d5acd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\UI">
+      <UniqueIdentifier>{f2c9083a-b294-4700-b246-35b1e0f5978d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Debugger">
+      <UniqueIdentifier>{35fa1fc1-e56e-49d9-aeca-c0c0afdee75e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\MediaEngine">
+      <UniqueIdentifier>{89dc10a5-82c2-4d59-8e1a-413f6ac89adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\PSP">
+      <UniqueIdentifier>{49978a0b-dbcd-451e-a8e6-05c7368e1076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Mixer">
+      <UniqueIdentifier>{bbcf7c65-d1f0-48c5-9347-d9261bf81530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\GPU">
+      <UniqueIdentifier>{f5fe1f68-a1e4-495a-ba4f-e7d38537a77c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Loaders">
+      <UniqueIdentifier>{aa4d42b1-eb06-47e4-a4e3-abf992177169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Allegrex\Interpreter">
+      <UniqueIdentifier>{93a4f03c-09a0-47b6-9334-a2cbab7560e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\HLE">
+      <UniqueIdentifier>{421c11f3-2520-4561-86c7-8436f2175b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\HLE\Modules">
+      <UniqueIdentifier>{89806f4d-206d-49cc-9c18-dc6e12e1ef2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Containers">
+      <UniqueIdentifier>{d041dc49-4bf2-4c93-8c96-8369d952d85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Audio">
+      <UniqueIdentifier>{8473ea26-aa06-42fa-b466-0f8ab783b152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{62d75c64-42e3-4562-90e8-53e50aa0d67f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Filesystem">
+      <UniqueIdentifier>{007fd094-9a1d-460f-a0b0-f2ab2976cb8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Kernel">
+      <UniqueIdentifier>{9f21eeab-9085-4266-817a-78d4d987a2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Kernel\Objects">
+      <UniqueIdentifier>{4912155d-c7bc-4231-bd57-1711cb500cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{489a3fd4-81aa-4ec0-99e4-f7cffc4cae2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Elf.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="BitScan.h">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="float24.h">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Emulator.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Logger.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Savestate.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\EmulatorConfig.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Filesystem\PSPFilesystem.h">
+      <Filter>Source Files\Core\Filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelFactory.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelSystemMemory.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\GPUDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\AllegrexDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\ATRACDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\KernelDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\AudioDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debugger\MPEGDebugger.h">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\RandomNumberGenerator.h">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PSP\Types.h">
+      <Filter>Source Files\Core\PSP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Thread.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\EventFlag.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Semaphore.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\FPL.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\VPL.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Mutex.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\LwMutex.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\MessageBox.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Alarm.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\KernelObject.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelError.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelObjectTypes.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelThread.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Memory\MemoryState.h">
+      <Filter>Source Files\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Memory\MemoryAccess.h">
+      <Filter>Source Files\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PSP\MemoryMap.h">
+      <Filter>Source Files\Core\PSP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\CPURegisterName.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelTypes.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loaders\AbstractLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loaders\ISOLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loaders\ELFLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loaders\PBPLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Module.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loaders\ELFHeader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Crypto\kirk_engine.h">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Crypto\SHA1.h">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Crypto\AES.h">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Crypto\amctrl.h">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Crypto\PRXDecrypter.h">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Filesystem\BlockDeviceTree.h">
+      <Filter>Source Files\Core\Filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Timing.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\DisplayList.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexState.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\Allegrex.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexInterpreter.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexDisassembler.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexSyscallHandler.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\HLE.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\CPUAssembler.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\Utility.h">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\Renderer.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\FunctionWrapper.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\CustomSyscall.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexInstructions.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\StdioForUser.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\IoFileMgrForUser.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Partition.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\GE.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\sceDisplay.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\TextureDecoder.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\UtilsForUser.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\RTC.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Audio\sceAudio.h">
+      <Filter>Source Files\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\GPU.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceCtrl.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HostController.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GPU\VertexDecoder.h">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\scePower.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelSema.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelEventFlag.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceUmd.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\ModuleMgrForUser.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceUtility.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelCallback.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\Objects\Callback.h">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelInterrupt.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexVFPU.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Allegrex\AllegrexVFPUTable.h">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceRtc.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelLwMutex.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Savedata.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Dialog.h">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Kernel\sceKernelAlarm.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceDmac.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HLE\Modules\sceAtrac3plus.h">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Emulator.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Savestate.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Logger.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\EmulatorConfig.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Filesystem\PSPFilesystem.cpp">
+      <Filter>Source Files\Core\Filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelFactory.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelSystemMemory.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\GPUDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\AllegrexDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\ATRACDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\KernelDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\AudioDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debugger\MPEGDebugger.cpp">
+      <Filter>Source Files\Core\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\RandomNumberGenerator.cpp">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\Thread.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\MessageBox.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\Mutex.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\KernelObject.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelThread.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Memory\MemoryState.cpp">
+      <Filter>Source Files\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Memory\MemoryAccess.cpp">
+      <Filter>Source Files\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Loaders\AbstractLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Loaders\PBPLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\Module.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Loaders\ELFLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Loaders\ISOLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\kirk_engine.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\SHA1.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\AES.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\amctrl.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\bn.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\ec.c">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Crypto\PRXDecrypter.cpp">
+      <Filter>Source Files\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Filesystem\BlockDeviceTree.cpp">
+      <Filter>Source Files\Core\Filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\DisplayList.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\Allegrex.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexState.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexInterpreter.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexDisassembler.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexSyscallHandler.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\HLE.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Timing.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\Utility.cpp">
+      <Filter>Source Files\Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\Renderer.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\CPUAssembler.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\FunctionWrapper.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\StdioForUser.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\IoFileMgrForUser.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\Objects\Partition.cpp">
+      <Filter>Source Files\Core\Kernel\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\GE.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\sceDisplay.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\TextureDecoder.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\UtilsForUser.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\RTC.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Audio\sceAudio.cpp">
+      <Filter>Source Files\Core\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\GPU.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceCtrl.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HostController.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GPU\VertexDecoder.cpp">
+      <Filter>Source Files\Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\scePower.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelSema.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelEventFlag.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceUmd.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\ModuleMgrForUser.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceUtility.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelCallback.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelInterrupt.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexVFPU.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Allegrex\AllegrexVFPUTable.cpp">
+      <Filter>Source Files\Core\Allegrex</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceRtc.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelLwMutex.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Savedata.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Dialog.cpp">
+      <Filter>Source Files\Core\HLE</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Kernel\sceKernelAlarm.cpp">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceDmac.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HLE\Modules\sceAtrac3plus.cpp">
+      <Filter>Source Files\Core\HLE\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="MIPSVFPUFallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\NTMFragmentShader.glsl">
+      <Filter>Source Files\Shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Kernel\sceKernelTemplateInstantiation.h">
+      <Filter>Source Files\Core\Kernel</Filter>
+    </None>
+    <None Include="Shaders\NTMVertexShader.glsl">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\FramebufferVertexShader.glsl">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\FramebufferFragmentShader.glsl">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

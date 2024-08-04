@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{af1f0ce4-a48b-4e63-8959-9be01a58fc10}</ProjectGuid>
+    <RootNamespace>PSPEmulator</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\shado\source\repos\PSP Emulator\PSP Emulator;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glew-2.1.0\include;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glm-master;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\SDL2-2.28.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glew-2.1.0\lib\Release\x64;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\SDL2-2.28.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glew32s.lib;opengl32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackCommitSize>65536</StackCommitSize>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\shado\source\repos\PSP Emulator\PSP Emulator;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glew-2.1.0\include;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glm-master;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\SDL2-2.28.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\glew-2.1.0\lib\Release\x64;C:\Users\shado\source\repos\PSP Emulator\PSP Emulator\SDL2-2.28.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glew32s.lib;opengl32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackCommitSize>65536</StackCommitSize>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BitScan.h" />
+    <ClInclude Include="Core\Allegrex\Allegrex.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexDisassembler.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexInstructions.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexInterpreter.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexVFPUTable.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexState.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexSyscallHandler.h" />
+    <ClInclude Include="Core\Allegrex\AllegrexVFPU.h" />
+    <ClInclude Include="Core\Allegrex\CPURegisterName.h" />
+    <ClInclude Include="Core\Audio\sceAudio.h" />
+    <ClInclude Include="Core\Crypto\AES.h" />
+    <ClInclude Include="Core\Crypto\amctrl.h" />
+    <ClInclude Include="Core\Crypto\kirk_engine.h" />
+    <ClInclude Include="Core\Crypto\PRXDecrypter.h" />
+    <ClInclude Include="Core\Crypto\SHA1.h" />
+    <ClInclude Include="Core\Debugger\AllegrexDebugger.h" />
+    <ClInclude Include="Core\Debugger\ATRACDebugger.h" />
+    <ClInclude Include="Core\Debugger\AudioDebugger.h" />
+    <ClInclude Include="Core\Debugger\GPUDebugger.h" />
+    <ClInclude Include="Core\Debugger\KernelDebugger.h" />
+    <ClInclude Include="Core\Debugger\MPEGDebugger.h" />
+    <ClInclude Include="Core\Emulator.h" />
+    <ClInclude Include="Core\EmulatorConfig.h" />
+    <ClInclude Include="Core\Filesystem\BlockDeviceTree.h" />
+    <ClInclude Include="Core\Filesystem\PSPFilesystem.h" />
+    <ClInclude Include="Core\GPU\sceDisplay.h" />
+    <ClInclude Include="Core\GPU\DisplayList.h" />
+    <ClInclude Include="Core\GPU\GE.h" />
+    <ClInclude Include="Core\GPU\GPU.h" />
+    <ClInclude Include="Core\GPU\Renderer.h" />
+    <ClInclude Include="Core\GPU\TextureDecoder.h" />
+    <ClInclude Include="Core\GPU\VertexDecoder.h" />
+    <ClInclude Include="Core\HLE\CPUAssembler.h" />
+    <ClInclude Include="Core\HLE\CustomSyscall.h" />
+    <ClInclude Include="Core\HLE\Dialog.h" />
+    <ClInclude Include="Core\HLE\FunctionWrapper.h" />
+    <ClInclude Include="Core\HLE\HLE.h" />
+    <ClInclude Include="Core\HLE\Modules\IoFileMgrForUser.h" />
+    <ClInclude Include="Core\HLE\Modules\ModuleMgrForUser.h" />
+    <ClInclude Include="Core\HLE\Modules\sceAtrac3plus.h" />
+    <ClInclude Include="Core\HLE\Modules\sceCtrl.h" />
+    <ClInclude Include="Core\HLE\Modules\sceDmac.h" />
+    <ClInclude Include="Core\HLE\Modules\scePower.h" />
+    <ClInclude Include="Core\HLE\Modules\sceRtc.h" />
+    <ClInclude Include="Core\HLE\Modules\sceUmd.h" />
+    <ClInclude Include="Core\HLE\Modules\sceUtility.h" />
+    <ClInclude Include="Core\HLE\Modules\StdioForUser.h" />
+    <ClInclude Include="Core\HLE\Modules\UtilsForUser.h" />
+    <ClInclude Include="Core\HLE\RTC.h" />
+    <ClInclude Include="Core\HLE\Savedata.h" />
+    <ClInclude Include="Core\HostController.h" />
+    <ClInclude Include="Core\Kernel\sceKernelAlarm.h" />
+    <ClInclude Include="Core\Kernel\sceKernelFactory.h" />
+    <ClInclude Include="Core\Kernel\sceKernelCallback.h" />
+    <ClInclude Include="Core\Kernel\sceKernelError.h" />
+    <ClInclude Include="Core\Kernel\sceKernelEventFlag.h" />
+    <ClInclude Include="Core\Kernel\sceKernelLwMutex.h" />
+    <ClInclude Include="Core\Kernel\sceKernelObjectTypes.h" />
+    <ClInclude Include="Core\Kernel\sceKernelSema.h" />
+    <ClInclude Include="Core\Kernel\sceKernelThread.h" />
+    <ClInclude Include="Core\Kernel\Objects\Callback.h" />
+    <ClInclude Include="Core\Kernel\Objects\Partition.h" />
+    <ClInclude Include="Core\Kernel\sceKernelInterrupt.h" />
+    <ClInclude Include="Core\Kernel\sceKernelSystemMemory.h" />
+    <ClInclude Include="Core\Kernel\Objects\Alarm.h" />
+    <ClInclude Include="Core\Kernel\Objects\EventFlag.h" />
+    <ClInclude Include="Core\Kernel\Objects\FPL.h" />
+    <ClInclude Include="Core\Kernel\Objects\KernelObject.h" />
+    <ClInclude Include="Core\Kernel\Objects\LwMutex.h" />
+    <ClInclude Include="Core\Kernel\Objects\MessageBox.h" />
+    <ClInclude Include="Core\Kernel\Objects\Module.h" />
+    <ClInclude Include="Core\Kernel\Objects\Mutex.h" />
+    <ClInclude Include="Core\Kernel\Objects\Semaphore.h" />
+    <ClInclude Include="Core\Kernel\Objects\Thread.h" />
+    <ClInclude Include="Core\Kernel\Objects\VPL.h" />
+    <ClInclude Include="Core\Kernel\sceKernelTypes.h" />
+    <ClInclude Include="Core\Loaders\AbstractLoader.h" />
+    <ClInclude Include="Core\Loaders\ELFHeader.h" />
+    <ClInclude Include="Core\Loaders\ELFLoader.h" />
+    <ClInclude Include="Core\Loaders\ISOLoader.h" />
+    <ClInclude Include="Core\Loaders\PBPLoader.h" />
+    <ClInclude Include="Core\Logger.h" />
+    <ClInclude Include="Core\Memory\MemoryAccess.h" />
+    <ClInclude Include="Core\Memory\MemoryState.h" />
+    <ClInclude Include="Core\PSP\MemoryMap.h" />
+    <ClInclude Include="Core\PSP\Types.h" />
+    <ClInclude Include="Core\Savestate.h" />
+    <ClInclude Include="Core\Timing.h" />
+    <ClInclude Include="Core\Utility\RandomNumberGenerator.h" />
+    <ClInclude Include="Core\Utility\Utility.h" />
+    <ClInclude Include="Elf.h" />
+    <ClInclude Include="float24.h" />
+    <ClInclude Include="MathUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Allegrex\Allegrex.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexDisassembler.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexInterpreter.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexVFPUTable.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexState.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexSyscallHandler.cpp" />
+    <ClCompile Include="Core\Allegrex\AllegrexVFPU.cpp" />
+    <ClCompile Include="Core\Audio\sceAudio.cpp" />
+    <ClCompile Include="Core\Crypto\AES.c" />
+    <ClCompile Include="Core\Crypto\amctrl.c" />
+    <ClCompile Include="Core\Crypto\bn.c" />
+    <ClCompile Include="Core\Crypto\ec.c" />
+    <ClCompile Include="Core\Crypto\kirk_engine.c" />
+    <ClCompile Include="Core\Crypto\PRXDecrypter.cpp" />
+    <ClCompile Include="Core\Crypto\SHA1.c" />
+    <ClCompile Include="Core\Debugger\AllegrexDebugger.cpp" />
+    <ClCompile Include="Core\Debugger\ATRACDebugger.cpp" />
+    <ClCompile Include="Core\Debugger\AudioDebugger.cpp" />
+    <ClCompile Include="Core\Debugger\GPUDebugger.cpp" />
+    <ClCompile Include="Core\Debugger\KernelDebugger.cpp" />
+    <ClCompile Include="Core\Debugger\MPEGDebugger.cpp" />
+    <ClCompile Include="Core\Emulator.cpp" />
+    <ClCompile Include="Core\EmulatorConfig.cpp" />
+    <ClCompile Include="Core\Filesystem\BlockDeviceTree.cpp" />
+    <ClCompile Include="Core\Filesystem\PSPFilesystem.cpp" />
+    <ClCompile Include="Core\GPU\sceDisplay.cpp" />
+    <ClCompile Include="Core\GPU\DisplayList.cpp" />
+    <ClCompile Include="Core\GPU\GE.cpp" />
+    <ClCompile Include="Core\GPU\GPU.cpp" />
+    <ClCompile Include="Core\GPU\Renderer.cpp" />
+    <ClCompile Include="Core\GPU\TextureDecoder.cpp" />
+    <ClCompile Include="Core\GPU\VertexDecoder.cpp" />
+    <ClCompile Include="Core\HLE\CPUAssembler.cpp" />
+    <ClCompile Include="Core\HLE\Dialog.cpp" />
+    <ClCompile Include="Core\HLE\FunctionWrapper.cpp" />
+    <ClCompile Include="Core\HLE\HLE.cpp" />
+    <ClCompile Include="Core\HLE\Modules\IoFileMgrForUser.cpp" />
+    <ClCompile Include="Core\HLE\Modules\ModuleMgrForUser.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceAtrac3plus.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceCtrl.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceDmac.cpp" />
+    <ClCompile Include="Core\HLE\Modules\scePower.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceRtc.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceUmd.cpp" />
+    <ClCompile Include="Core\HLE\Modules\sceUtility.cpp" />
+    <ClCompile Include="Core\HLE\Modules\StdioForUser.cpp" />
+    <ClCompile Include="Core\HLE\Modules\UtilsForUser.cpp" />
+    <ClCompile Include="Core\HLE\RTC.cpp" />
+    <ClCompile Include="Core\HLE\Savedata.cpp" />
+    <ClCompile Include="Core\HostController.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelAlarm.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelFactory.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelCallback.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelEventFlag.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelInterrupt.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelLwMutex.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelSema.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelThread.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\Partition.cpp" />
+    <ClCompile Include="Core\Kernel\sceKernelSystemMemory.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\KernelObject.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\MessageBox.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\Module.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\Mutex.cpp" />
+    <ClCompile Include="Core\Kernel\Objects\Thread.cpp" />
+    <ClCompile Include="Core\Loaders\AbstractLoader.cpp" />
+    <ClCompile Include="Core\Loaders\ELFLoader.cpp" />
+    <ClCompile Include="Core\Loaders\ISOLoader.cpp" />
+    <ClCompile Include="Core\Loaders\PBPLoader.cpp" />
+    <ClCompile Include="Core\Logger.cpp" />
+    <ClCompile Include="Core\Memory\MemoryAccess.cpp" />
+    <ClCompile Include="Core\Memory\MemoryState.cpp" />
+    <ClCompile Include="Core\Savestate.cpp" />
+    <ClCompile Include="Core\Timing.cpp" />
+    <ClCompile Include="Core\Utility\RandomNumberGenerator.cpp" />
+    <ClCompile Include="Core\Utility\Utility.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MIPSVFPUFallbacks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\NTMFragmentShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Kernel\sceKernelTemplateInstantiation.h" />
+    <None Include="Shaders\FramebufferFragmentShader.glsl" />
+    <None Include="Shaders\FramebufferVertexShader.glsl" />
+    <None Include="Shaders\NTMVertexShader.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
