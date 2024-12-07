@@ -1,5 +1,5 @@
 # awoogaPSP
-an HLE PSP emulator in C++
+an HLE PSP emulator written in C++
 
 ![cave story](img/cavestory.png)
 ![crash](img/crash.png)
